@@ -1,0 +1,28 @@
+﻿# Backup do Git antigo
+.git-backup-textqualid/
+
+# Arquivos gerados pelo .NET
+**/bin/
+**/obj/
+.vs/
+TestResults/
+**/TestResults/
+
+# Banco de dados local
+*.db
+*.db-shm
+*.db-wal
+
+# Configuracoes locais e arquivos sensiveis
+.env
+.env.*
+**/appsettings.Development.json
+**/secrets.json
+
+# Arquivos temporarios
+*.tmp
+*.log
+
+# Configuracoes locais do editor
+.vscode/
+.idea/

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acompanhar Solicitação | TextQualid</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TextQualid</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="abrir-solicitacao.html">Abrir solicitação</a>
+            <a href="acompanhar.html">Acompanhar</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="consulta-container">
+
+            <h2>Acompanhar Solicitação</h2>
+
+            <p class="descricao">
+                Consulte o andamento da sua solicitação
+                utilizando o número do protocolo.
+            </p>
+
+            <form id="formConsulta">
+
+                <div class="campo">
+                    <label for="protocolo">Número do protocolo:</label>
+
+                    <input type="text" id="protocolo" name="protocolo" placeholder="Exemplo: TQ-2026-0001" required>
+                </div>
+
+                <button type="submit" class="botao">
+                    Consultar solicitação
+                </button>
+
+            </form>
+
+            <div id="resultadoSolicitacao" class="resultado-consulta" aria-live="polite"></div>
+
+            <div class="resultado-consulta">
+
+                <h3>Como funciona o acompanhamento?</h3>
+
+                <div class="status-item">
+                    <span class="status aberto">Aberta</span>
+                    <p>A solicitação foi registrada no sistema.</p>
+                </div>
+
+                <div class="status-item">
+                    <span class="status andamento">Em andamento</span>
+                    <p>A solicitação está sendo analisada pela equipe.</p>
+                </div>
+
+                <div class="status-item">
+                    <span class="status concluido">Concluída</span>
+                    <p>A solicitação foi atendida e finalizada.</p>
+                </div>
+
+            </div>
+
+            <a href="index.html" class="voltar">
+                Voltar para o início
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TextQualid - Sistema de Atendimento Acadêmico</p>
+    </footer>
+
+<script src="js/acompanhar.js"></script>
+</body>
+
+</html>

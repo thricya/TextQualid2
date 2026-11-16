@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Administrativo | TextQualid</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TextQualid</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="abrir-solicitacao.html">Abrir solicitação</a>
+            <a href="acompanhar.html">Acompanhar</a>
+            <a href="painel.html">Painel administrativo</a>
+        </nav>
+    </header>
+
+    <main class="painel-container">
+
+        <section class="painel-titulo">
+            <h2>Painel Administrativo</h2>
+
+            <p>
+                Gerencie e acompanhe as solicitações
+                de atendimento acadêmico.
+            </p>
+        </section>
+
+        <!-- CARDS DE RESUMO -->
+
+        <section class="resumo-cards">
+
+            <div class="resumo-card">
+                <h3>Total de solicitações</h3>
+                <p class="numero total" id="totalSolicitacoes">0</p>
+            </div>
+
+            <div class="resumo-card">
+                <h3>Solicitações abertas</h3>
+                <p class="numero abertas" id="solicitacoesAbertas">0</p>
+            </div>
+
+            <div class="resumo-card">
+                <h3>Em andamento</h3>
+                <p class="numero andamento-numero" id="solicitacoesAndamento">0</p>
+            </div>
+
+            <div class="resumo-card">
+                <h3>Concluídas</h3>
+                <p class="numero concluidas" id="solicitacoesConcluidas">0</p>
+            </div>
+
+        </section>
+
+        <!-- TABELA DE SOLICITAÇÕES -->
+
+        <section class="tabela-container">
+
+            <h3>Solicitações recebidas</h3>
+
+            <div class="tabela-responsiva">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Protocolo</th>
+                            <th>Estudante</th>
+                            <th>Categoria</th>
+                            <th>Assunto</th>
+                            <th>Status</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaSolicitacoes">
+
+                        <tr>
+                            <td>TQ20260001</td>
+                            <td>Maria Silva</td>
+                            <td>Financeiro</td>
+                            <td>Boleto</td>
+                            <td>
+                                <span class="status aberto">
+                                    Aberta
+                                </span>
+                            </td>
+                            <td>
+                                <a href="detalhes.html" class="link-detalhes">
+                                    Visualizar
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>TQ20260002</td>
+                            <td>João Santos</td>
+                            <td>Acadêmico</td>
+                            <td>Notas</td>
+                            <td>
+                                <span class="status andamento">
+                                    Em andamento
+                                </span>
+                            </td>
+                            <td>
+                                <a href="detalhes.html" class="link-detalhes">
+                                    Visualizar
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>TQ20260003</td>
+                            <td>Ana Oliveira</td>
+                            <td>Matrícula</td>
+                            <td>Rematrícula</td>
+                            <td>
+                                <span class="status concluido">
+                                    Concluída
+                                </span>
+                            </td>
+                            <td>
+                                <a href="detalhes.html" class="link-detalhes">
+                                    Visualizar
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <a href="index.html" class="voltar">
+            Voltar para o início
+        </a>
+
+    </main>
+
+    <footer>
+        <p>TextQualid - Sistema de Atendimento Acadêmico</p>
+    </footer>
+
+<script src="js/painel.js"></script>
+</body>
+
+</html>

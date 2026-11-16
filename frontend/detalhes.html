@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes da Solicitação | TextQualid</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TextQualid</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="abrir-solicitacao.html">Abrir solicitação</a>
+            <a href="acompanhar.html">Acompanhar</a>
+            <a href="painel.html">Painel administrativo</a>
+        </nav>
+    </header>
+
+    <main class="detalhes-container">
+
+        <section class="detalhes-card">
+
+            <h2>Detalhes da Solicitação</h2>
+
+            <p class="descricao">
+                Consulte as informações e atualize o andamento
+                da solicitação do estudante.
+            </p>
+
+            <div class="informacoes-solicitacao">
+
+                <div class="informacao">
+                    <strong>Protocolo:</strong>
+                    <span id="protocolo">Carregando...</span>
+                </div>
+
+                <div class="informacao">
+                    <strong>Estudante:</strong>
+                    <span id="nome">Carregando...</span>
+                </div>
+
+                <div class="informacao">
+                    <strong>Matrícula:</strong>
+                    <span id="matricula">Carregando...</span>
+                </div>
+
+                <div class="informacao">
+                    <strong>E-mail:</strong>
+                    <span id="email">Carregando...</span>
+                </div>
+
+                <div class="informacao">
+                    <strong>Categoria:</strong>
+                    <span id="categoria">Carregando...</span>
+                </div>
+
+                <div class="informacao">
+                    <strong>Assunto:</strong>
+                    <span id="assunto">Carregando...</span>
+                </div>
+
+                <div class="informacao descricao-completa">
+                    <strong>Descrição da solicitação:</strong>
+                    <p id="descricao">Carregando...</p>
+                </div>
+
+            </div>
+
+            <div class="atualizar-status">
+
+                <h3>Atualizar atendimento</h3>
+
+                <form id="formStatus">
+
+                    <div class="campo">
+
+                        <label for="status">Status da solicitação:</label>
+
+                        <select id="status" name="status" required>
+                            <option value="Aberta">Aberta</option>
+                            <option value="Em andamento">Em andamento</option>
+                            <option value="Concluída">Concluída</option>
+                        </select>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="observacao">Observação do atendimento:</label>
+
+                        <textarea id="observacao" name="observacao" rows="4"
+                            placeholder="Digite uma observação sobre o atendimento..."></textarea>
+
+                    </div>
+
+                    <button type="submit" class="botao">
+                        Salvar atualização
+                    </button>
+
+                </form>
+
+            </div>
+
+            <a href="painel.html" class="voltar">
+                Voltar ao painel administrativo
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TextQualid - Sistema de Atendimento Acadêmico</p>
+    </footer>
+
+    <script src="js/detalhes.js"></script>
+</body>
+
+</html>

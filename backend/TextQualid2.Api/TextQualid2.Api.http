@@ -1,0 +1,6 @@
+@TextQualid2.Api_HostAddress = http://localhost:5020
+
+GET {{TextQualid2.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
